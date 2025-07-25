@@ -1,0 +1,166 @@
+
+package com.tripgain.hotaltestscripts;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.tripgain.collectionofpages.*;
+import com.tripgain.common.*;
+import com.tripgain.hotels.collectionofpages.Tripgain_Hotel_BookingPage;
+import com.tripgain.hotels.collectionofpages.Tripgain_Hotel_ResultPage;
+import com.tripgain.hotels.collectionofpages.Tripgain_Hotel_ShowViewMap;
+import com.tripgain.hotels.collectionofpages.Tripgain_Hotel_homepage;
+import com.tripgain.hotels.collectionofpages.Tripgain_Hotel_hotelDetailPage;
+import com.tripgain.testscripts.BaseClass;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.annotations.*;
+
+import java.io.IOException;
+import java.lang.reflect.Method;
+import java.time.Duration;
+import java.util.Map;
+
+@Listeners(TestListener.class)
+public class TCH_04_VerifySearchFunctionalityForHotalForTwoDayApplyingFliters extends BaseClass {
+	
+	WebDriver driver;    
+	ExtentReports extent;
+	ExtentTest test;
+	String className = "";
+	Log Log;  // Declare Log object
+	ScreenShots screenShots;  // Declare Log object
+	ExtantManager extantManager;
+	// ThreadLocal to store Excel data per test thread
+	static ThreadLocal<Map<String, String>> excelDataThread = new ThreadLocal<>();
+
+	int number=1;
+
+	@Test(dataProvider = "sheetBasedData", dataProviderClass = DataProviderUtils.class)
+	public void myTest(Map<String, String> excelData) throws InterruptedException, IOException {
+		System.out.println("Running test with: " + excelData);
+		//To get Data from Excel
+		try{
+			String userName1 = excelData.get("UserName");
+			String password1 = excelData.get("Password");
+	        String[] dates=GenerateDates.GenerateDatesToSelectFlights();
+		    String fromDate=dates[11];
+			String returnDate=dates[0];
+		//	String fromMonthYear=dates[2];
+		//	String returnMonthYear=dates[10];
+			number++;
+			String city = excelData.get("City");
+			int Index = Integer.parseInt(excelData.get("index"));
+
+			int roomcount = Integer.parseInt(excelData.get("roomCount"));
+			int adultcount = Integer.parseInt(excelData.get("adultCount"));
+			int childcount = Integer.parseInt(excelData.get("childCount"));
+			int childAge = Integer.parseInt(excelData.get("ChildAge"));
+			
+			Tripgain_FutureDates futureDates = new Tripgain_FutureDates();
+			 Map<String, Tripgain_FutureDates.DateResult> dateResults = futureDates.furtherDate();
+			 Tripgain_FutureDates.DateResult date2 = dateResults.get("datePlus2");
+			 String fromMonthYear = date2.month + " " + date2.year;
+			 Tripgain_FutureDates.DateResult date5 = dateResults.get("datePlus5");
+			 String returnMonthYear = date5.month + " " + date5.year;
+			 
+			test.log(Status.INFO, "Hotel city search :" +" "+city);
+		    test.log(Status.INFO, "Number of rooms: :" +" "+roomcount);
+		    test.log(Status.INFO, "Number of Adult :" +" "+adultcount);
+		    test.log(Status.INFO, "Number of child:" +" "+childcount);
+		    test.log(Status.INFO, "Flight From Date:" +" "+fromDate+" "+"and MonthAndYear:"+" "+fromMonthYear);
+		    test.log(Status.INFO, "Flight Return Date:" +" "+returnDate+" "+"and MonthAndYear:"+" "+returnMonthYear);
+			//Functions to Login TripGain Application
+			Tripgain_Login tripgainLogin= new Tripgain_Login(driver);
+			Tripgain_Hotel_homepage hotelHomepage = new Tripgain_Hotel_homepage(driver);
+			Tripgain_Hotel_ResultPage resultpage = new Tripgain_Hotel_ResultPage(driver);
+			Tripgain_Hotel_ShowViewMap tripgain_Hotel_ShowViewMap= new Tripgain_Hotel_ShowViewMap(driver);
+			Tripgain_Hotel_hotelDetailPage tripgain_Hotel_hotelDetailPage = new Tripgain_Hotel_hotelDetailPage(driver);
+			Tripgain_Hotel_BookingPage tripgain_Hotel_BookingPage = new Tripgain_Hotel_BookingPage(driver);
+		       
+			tripgainLogin.enterUserName(userName1);
+			tripgainLogin.enterPasswordName(password1);
+			tripgainLogin.clickButton();
+			Thread.sleep(2000);
+			
+			hotelHomepage.hotelClick();
+			hotelHomepage.validateHomePgaeIsDisplayed(Log, screenShots);
+			hotelHomepage.enterCityOrHotelName(city);
+            hotelHomepage.selectDate(date2.day, fromMonthYear);
+			hotelHomepage.selectReturnDate(date5.day, returnMonthYear);
+			hotelHomepage.addRoom(roomcount,adultcount,childcount,childAge);
+			long startTime = System.currentTimeMillis();
+            hotelHomepage.clickOnSearch();
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h6[@title]")));
+            long endTime = System.currentTimeMillis();
+			long loadTimeInSeconds = (endTime - startTime) / 1000;
+			
+			Log.ReportEvent("INFO", "Hotel search results loaded in " + loadTimeInSeconds + " seconds");
+			
+			resultpage.getFlightsCount(Log, screenShots);
+			resultpage.validateResultScreen(Log, screenShots);
+			String userEnteredData[]=resultpage.userEnteredData();
+			
+			resultpage.clickOnShowMap();
+			tripgain_Hotel_ShowViewMap.clickOnHotelName(Log, screenShots);
+			String hotelName=tripgain_Hotel_ShowViewMap.selectHotelName(Log, screenShots);
+			String price=tripgain_Hotel_ShowViewMap.getSelectedHotelPrice(Log, screenShots);
+			Thread.sleep(7000);
+			Map<String, Object> hotelDetails=tripgain_Hotel_ShowViewMap.validateSelectedHotelNameAndPriceInShowViewMap(hotelName,price,Log, screenShots);
+			Map<String, Object> hotelDetail=tripgain_Hotel_hotelDetailPage.validateHotelDetailPage(Log, screenShots,hotelDetails);
+			Map<String, Object> hotelDetailsData=tripgain_Hotel_hotelDetailPage.getHotelCardDetails(Log, screenShots,1,hotelDetail);
+			tripgain_Hotel_BookingPage.validateBookingPage(userEnteredData,hotelDetail,hotelDetailsData,Log, screenShots);
+			
+			
+			
+		}catch (Exception e)
+		{
+			String errorMessage = "Exception occurred: " + e.toString();
+			Log.ReportEvent("FAIL", errorMessage);
+			screenShots.takeScreenShot();
+			e.printStackTrace();  // You already have this, good for console logs
+			Assert.fail(errorMessage);
+		}
+
+	}
+
+	@BeforeMethod(alwaysRun = true)
+	@Parameters("browser")
+	public void launchApplication(String browser, Method method, Object[] testDataObjects) {
+		// Get test data passed from DataProvider
+		@SuppressWarnings("unchecked")
+		Map<String, String> testData = (Map<String, String>) testDataObjects[0];
+		excelDataThread.set(testData);  // Set it early!
+
+		String url = (testData != null && testData.get("URL") != null) ? testData.get("URL") : "https://defaulturl.com";
+
+		extantManager = new ExtantManager();
+		extantManager.setUpExtentReporter(browser);
+		className = this.getClass().getSimpleName();
+		String testName = className + "_" + number;
+		extantManager.createTest(testName);
+		test = ExtantManager.getTest();
+		extent = extantManager.getReport();
+		test.log(Status.INFO, "Execution Started Successfully");
+
+		driver = launchBrowser(browser, url);
+		Log = new Log(driver, test);
+		screenShots = new ScreenShots(driver, test);
+	}
+
+	@AfterMethod
+	public void tearDown() {
+		if (driver != null) {
+		//	driver.quit();
+			extantManager.flushReport();
+		}
+	}
+
+
+
+}

@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-25T10:32:54 IST" name="Suite" finished-at="2025-07-25T10:56:30 IST" duration-ms="1415904">
+    <groups>
+    </groups>
+    <test started-at="2025-07-25T10:32:54 IST" name="test4" finished-at="2025-07-25T10:32:54 IST" duration-ms="14">
+    </test> <!-- test4 -->
+    <test started-at="2025-07-25T10:32:54 IST" name="test1" finished-at="2025-07-25T10:32:54 IST" duration-ms="14">
+    </test> <!-- test1 -->
+    <test started-at="2025-07-25T10:32:54 IST" name="test3" finished-at="2025-07-25T10:32:54 IST" duration-ms="14">
+    </test> <!-- test3 -->
+    <test started-at="2025-07-25T10:32:54 IST" name="test2" finished-at="2025-07-25T10:32:54 IST" duration-ms="14">
+    </test> <!-- test2 -->
+    <test started-at="2025-07-25T10:32:54 IST" name="test" finished-at="2025-07-25T10:56:30 IST" duration-ms="1415904">
+      <class name="com.tripgain.hotaltestscripts.TCH_01_VerifySearchFunctionalityForHotalForTwoDays">
+        <test-method is-config="true" signature="launchApplication(java.lang.String,java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:com.tripgain.hotaltestscripts.TCH_01_VerifySearchFunctionalityForHotalForTwoDays@399c4be1]" started-at="2025-07-25T10:32:55 IST" name="launchApplication" finished-at="2025-07-25T10:32:57 IST" duration-ms="2189" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.tripgain.hotaltestscripts.TCH_01_VerifySearchFunctionalityForHotalForTwoDays.myTest(java.util.Map) throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@1a18644]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="myTest(java.util.Map)[pri:0, instance:com.tripgain.hotaltestscripts.TCH_01_VerifySearchFunctionalityForHotalForTwoDays@399c4be1]" started-at="2025-07-25T10:32:57 IST" name="myTest" data-provider="sheetBasedData" finished-at="2025-07-25T10:33:42 IST" duration-ms="44997" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{roomCount=1, UserName=testtraveller98@tripgain.com, adultCount=2, TestRun=, ChildAge=1, index=1, childCount=0, City=Bengaluru, Karnataka, India, URL=https://v3.tripgain.com/login, Password=@AM@TGA1$29TN}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tripgain.hotaltestscripts.TCH_01_VerifySearchFunctionalityForHotalForTwoDays@399c4be1]" started-at="2025-07-25T10:33:42 IST" name="tearDown" finished-at="2025-07-25T10:33:43 IST" duration-ms="821" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication(java.lang.String,java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:com.tripgain.hotaltestscripts.TCH_01_VerifySearchFunctionalityForHotalForTwoDays@399c4be1]" started-at="2025-07-25T10:33:43 IST" name="launchApplication" finished-at="2025-07-25T10:33:44 IST" duration-ms="1300" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.tripgain.hotaltestscripts.TCH_01_VerifySearchFunctionalityForHotalForTwoDays.myTest(java.util.Map) throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5acf93bb]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="myTest(java.util.Map)[pri:0, instance:com.tripgain.hotaltestscripts.TCH_01_VerifySearchFunctionalityForHotalForTwoDays@399c4be1]" started-at="2025-07-25T10:33:44 IST" name="myTest" data-provider="sheetBasedData" finished-at="2025-07-25T10:34:37 IST" duration-ms="52978" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{roomCount=2, UserName=testtraveller98@tripgain.com, adultCount=2, TestRun=, ChildAge=2, index=1, childCount=1, City=hydrerabad, Telangana, india, URL=https://v3.tripgain.com/login, Password=@AM@TGA1$29TN}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tripgain.hotaltestscripts.TCH_01_VerifySearchFunctionalityForHotalForTwoDays@399c4be1]" started-at="2025-07-25T10:34:37 IST" name="tearDown" finished-at="2025-07-25T10:34:37 IST" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tripgain.hotaltestscripts.TCH_01_VerifySearchFunctionalityForHotalForTwoDays -->
+      <class name="com.tripgain.hotaltestscripts.TCH_04_VerifySearchFunctionalityForHotalForTwoDayTillBookingPage">
+        <test-method is-config="true" signature="launchApplication(java.lang.String,java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:com.tripgain.hotaltestscripts.TCH_04_VerifySearchFunctionalityForHotalForTwoDayTillBookingPage@68567e20]" started-at="2025-07-25T10:37:38 IST" name="launchApplication" finished-at="2025-07-25T10:37:39 IST" duration-ms="1312" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.tripgain.hotaltestscripts.TCH_04_VerifySearchFunctionalityForHotalForTwoDayTillBookingPage.myTest(java.util.Map) throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@4738a206]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="myTest(java.util.Map)[pri:0, instance:com.tripgain.hotaltestscripts.TCH_04_VerifySearchFunctionalityForHotalForTwoDayTillBookingPage@68567e20]" started-at="2025-07-25T10:37:39 IST" name="myTest" data-provider="sheetBasedData" finished-at="2025-07-25T10:38:53 IST" duration-ms="73601" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{roomCount=1, UserName=testtraveller98@tripgain.com, adultCount=2, TestRun=, ChildAge=1, index=1, childCount=0, City=Bengaluru, Karnataka, India, URL=https://v3.tripgain.com/login, Password=@AM@TGA1$29TN}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tripgain.hotaltestscripts.TCH_04_VerifySearchFunctionalityForHotalForTwoDayTillBookingPage@68567e20]" started-at="2025-07-25T10:38:53 IST" name="tearDown" finished-at="2025-07-25T10:38:53 IST" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication(java.lang.String,java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:com.tripgain.hotaltestscripts.TCH_04_VerifySearchFunctionalityForHotalForTwoDayTillBookingPage@68567e20]" started-at="2025-07-25T10:38:53 IST" name="launchApplication" finished-at="2025-07-25T10:38:54 IST" duration-ms="1203" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.tripgain.hotaltestscripts.TCH_04_VerifySearchFunctionalityForHotalForTwoDayTillBookingPage.myTest(java.util.Map) throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@66d3eec0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="myTest(java.util.Map)[pri:0, instance:com.tripgain.hotaltestscripts.TCH_04_VerifySearchFunctionalityForHotalForTwoDayTillBookingPage@68567e20]" started-at="2025-07-25T10:38:54 IST" name="myTest" data-provider="sheetBasedData" finished-at="2025-07-25T10:40:18 IST" duration-ms="83957" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{roomCount=2, UserName=testtraveller98@tripgain.com, adultCount=2, TestRun=, ChildAge=2, index=1, childCount=1, City=hydrerabad, Telangana, india, URL=https://v3.tripgain.com/login, Password=@AM@TGA1$29TN}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tripgain.hotaltestscripts.TCH_04_VerifySearchFunctionalityForHotalForTwoDayTillBookingPage@68567e20]" started-at="2025-07-25T10:40:18 IST" name="tearDown" finished-at="2025-07-25T10:40:18 IST" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tripgain.hotaltestscripts.TCH_04_VerifySearchFunctionalityForHotalForTwoDayTillBookingPage -->
+      <class name="com.tripgain.hotaltestscripts.TCH_05_VerifySearchFunctionalityForHotalApplyingFliters">
+        <test-method is-config="true" signature="launchApplication(java.lang.String,java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:com.tripgain.hotaltestscripts.TCH_05_VerifySearchFunctionalityForHotalApplyingFliters@76ed1b7c]" started-at="2025-07-25T10:40:18 IST" name="launchApplication" finished-at="2025-07-25T10:40:20 IST" duration-ms="1980" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.tripgain.hotaltestscripts.TCH_05_VerifySearchFunctionalityForHotalApplyingFliters.myTest(java.util.Map) throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@1e04fa0a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="myTest(java.util.Map)[pri:0, instance:com.tripgain.hotaltestscripts.TCH_05_VerifySearchFunctionalityForHotalApplyingFliters@76ed1b7c]" started-at="2025-07-25T10:40:20 IST" name="myTest" data-provider="sheetBasedData" finished-at="2025-07-25T10:43:28 IST" duration-ms="188460" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{roomCount=1, Price : High to Low=Price : High to Low, UserName=testtraveller98@tripgain.com, adultCount=2, ChildAge=1, index=1, childCount=0, City=Bengaluru, Karnataka, India, Distance Descending=Distance Descending, URL=https://v3.tripgain.com/login, Hotels : Ascending=Hotels : Ascending, Price : Low to High=Price : Low to High, TestRun=, Star : Ascending=Star : Ascending, Distance Ascending=Distance Ascending, Hotels : Descending=Hotels : Descending, Star : Descending=Star : Descending, Password=@AM@TGA1$29TN}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tripgain.hotaltestscripts.TCH_05_VerifySearchFunctionalityForHotalApplyingFliters@76ed1b7c]" started-at="2025-07-25T10:43:28 IST" name="tearDown" finished-at="2025-07-25T10:43:29 IST" duration-ms="98" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication(java.lang.String,java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:com.tripgain.hotaltestscripts.TCH_05_VerifySearchFunctionalityForHotalApplyingFliters@76ed1b7c]" started-at="2025-07-25T10:43:29 IST" name="launchApplication" finished-at="2025-07-25T10:43:30 IST" duration-ms="1223" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.tripgain.hotaltestscripts.TCH_05_VerifySearchFunctionalityForHotalApplyingFliters.myTest(java.util.Map) throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@1af2d44a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="myTest(java.util.Map)[pri:0, instance:com.tripgain.hotaltestscripts.TCH_05_VerifySearchFunctionalityForHotalApplyingFliters@76ed1b7c]" started-at="2025-07-25T10:43:30 IST" name="myTest" data-provider="sheetBasedData" finished-at="2025-07-25T10:46:01 IST" duration-ms="150982" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{roomCount=2, Price : High to Low=Price : High to Low, UserName=testtraveller98@tripgain.com, adultCount=2, ChildAge=2, index=1, childCount=1, City=hydrerabad, Telangana, india, Distance Descending=Distance Descending, URL=https://v3.tripgain.com/login, Hotels : Ascending=Hotels : Ascending, Price : Low to High=Price : Low to High, TestRun=, Star : Ascending=Star : Ascending, Distance Ascending=Distance Ascending, Hotels : Descending=Hotels : Descending, Star : Descending=Star : Descending, Password=@AM@TGA1$29TN}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tripgain.hotaltestscripts.TCH_05_VerifySearchFunctionalityForHotalApplyingFliters@76ed1b7c]" started-at="2025-07-25T10:46:01 IST" name="tearDown" finished-at="2025-07-25T10:46:01 IST" duration-ms="157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tripgain.hotaltestscripts.TCH_05_VerifySearchFunctionalityForHotalApplyingFliters -->
+      <class name="com.tripgain.hotaltestscripts.TCH_02_VerifySearchFunctionalityForHotalForFiveDays">
+        <test-method is-config="true" signature="launchApplication(java.lang.String,java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:com.tripgain.hotaltestscripts.TCH_02_VerifySearchFunctionalityForHotalForFiveDays@2118cddf]" started-at="2025-07-25T10:34:38 IST" name="launchApplication" finished-at="2025-07-25T10:34:40 IST" duration-ms="1366" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.tripgain.hotaltestscripts.TCH_02_VerifySearchFunctionalityForHotalForFiveDays.myTest(java.util.Map) throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@7e7be63f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="myTest(java.util.Map)[pri:0, instance:com.tripgain.hotaltestscripts.TCH_02_VerifySearchFunctionalityForHotalForFiveDays@2118cddf]" started-at="2025-07-25T10:34:40 IST" name="myTest" data-provider="sheetBasedData" finished-at="2025-07-25T10:35:40 IST" duration-ms="60293" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{roomCount=2, UserName=testtraveller98@tripgain.com, adultCount=3, TestRun=, ChildAge=1, index=1, childCount=1, City=Bangalore, URL=https://v3.tripgain.com/login, Password=@AM@TGA1$29TN}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tripgain.hotaltestscripts.TCH_02_VerifySearchFunctionalityForHotalForFiveDays@2118cddf]" started-at="2025-07-25T10:35:40 IST" name="tearDown" finished-at="2025-07-25T10:35:40 IST" duration-ms="566" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication(java.lang.String,java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:com.tripgain.hotaltestscripts.TCH_02_VerifySearchFunctionalityForHotalForFiveDays@2118cddf]" started-at="2025-07-25T10:35:40 IST" name="launchApplication" finished-at="2025-07-25T10:35:42 IST" duration-ms="1226" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.tripgain.hotaltestscripts.TCH_02_VerifySearchFunctionalityForHotalForFiveDays.myTest(java.util.Map) throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@6cd28fa7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="myTest(java.util.Map)[pri:0, instance:com.tripgain.hotaltestscripts.TCH_02_VerifySearchFunctionalityForHotalForFiveDays@2118cddf]" started-at="2025-07-25T10:35:42 IST" name="myTest" data-provider="sheetBasedData" finished-at="2025-07-25T10:36:35 IST" duration-ms="53186" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{roomCount=2, UserName=testtraveller98@tripgain.com, adultCount=2, TestRun=, ChildAge=2, index=1, childCount=1, City=hydrerabad, Telangana, india, URL=https://v3.tripgain.com/login, Password=@AM@TGA1$29TN}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tripgain.hotaltestscripts.TCH_02_VerifySearchFunctionalityForHotalForFiveDays@2118cddf]" started-at="2025-07-25T10:36:35 IST" name="tearDown" finished-at="2025-07-25T10:36:35 IST" duration-ms="583" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tripgain.hotaltestscripts.TCH_02_VerifySearchFunctionalityForHotalForFiveDays -->
+      <class name="com.tripgain.hotaltestscripts.TCH_07_VerifySearchByHotelCurrency">
+        <test-method is-config="true" signature="launchApplication(java.lang.String,java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:com.tripgain.hotaltestscripts.TCH_07_VerifySearchByHotelCurrency@394a2528]" started-at="2025-07-25T10:51:38 IST" name="launchApplication" finished-at="2025-07-25T10:51:40 IST" duration-ms="1291" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.tripgain.hotaltestscripts.TCH_07_VerifySearchByHotelCurrency.myTest(java.util.Map) throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@543588e6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="myTest(java.util.Map)[pri:0, instance:com.tripgain.hotaltestscripts.TCH_07_VerifySearchByHotelCurrency@394a2528]" started-at="2025-07-25T10:51:40 IST" name="myTest" data-provider="sheetBasedData" finished-at="2025-07-25T10:52:43 IST" duration-ms="62959" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{roomCount=1, UserRating=Excellent: 4+, UserRatingNumber=4, UserName=testtraveller98@tripgain.com, adultCount=2, TestRun=, ChildAge=1, index=1, childCount=0, City=Bengaluru, Karnataka, India, URL=https://v3.tripgain.com/login, Password=@AM@TGA1$29TN}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tripgain.hotaltestscripts.TCH_07_VerifySearchByHotelCurrency@394a2528]" started-at="2025-07-25T10:52:43 IST" name="tearDown" finished-at="2025-07-25T10:52:43 IST" duration-ms="84" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication(java.lang.String,java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:com.tripgain.hotaltestscripts.TCH_07_VerifySearchByHotelCurrency@394a2528]" started-at="2025-07-25T10:52:43 IST" name="launchApplication" finished-at="2025-07-25T10:52:44 IST" duration-ms="1249" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.tripgain.hotaltestscripts.TCH_07_VerifySearchByHotelCurrency.myTest(java.util.Map) throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@f5acb9d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="myTest(java.util.Map)[pri:0, instance:com.tripgain.hotaltestscripts.TCH_07_VerifySearchByHotelCurrency@394a2528]" started-at="2025-07-25T10:52:44 IST" name="myTest" data-provider="sheetBasedData" finished-at="2025-07-25T10:53:45 IST" duration-ms="61168" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{roomCount=1, UserRating=Very Good: 3.5+, UserRatingNumber=3.5, UserName=testtraveller98@tripgain.com, adultCount=2, TestRun=, ChildAge=1, index=1, childCount=0, City=hydrerabad, Telangana, india, URL=https://v3.tripgain.com/login, Password=@AM@TGA1$29TN}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tripgain.hotaltestscripts.TCH_07_VerifySearchByHotelCurrency@394a2528]" started-at="2025-07-25T10:53:45 IST" name="tearDown" finished-at="2025-07-25T10:53:45 IST" duration-ms="100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tripgain.hotaltestscripts.TCH_07_VerifySearchByHotelCurrency -->
+      <class name="com.tripgain.hotaltestscripts.TCH_06_VerifySearchByHotelAddressFunctionality">
+        <test-method is-config="true" signature="launchApplication(java.lang.String,java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:com.tripgain.hotaltestscripts.TCH_06_VerifySearchByHotelAddressFunctionality@11fc564b]" started-at="2025-07-25T10:46:01 IST" name="launchApplication" finished-at="2025-07-25T10:46:02 IST" duration-ms="1285" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.tripgain.hotaltestscripts.TCH_06_VerifySearchByHotelAddressFunctionality.myTest(java.util.Map) throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@18d87d80]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="myTest(java.util.Map)[pri:0, instance:com.tripgain.hotaltestscripts.TCH_06_VerifySearchByHotelAddressFunctionality@11fc564b]" started-at="2025-07-25T10:46:02 IST" name="myTest" data-provider="sheetBasedData" finished-at="2025-07-25T10:47:44 IST" duration-ms="101522" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{roomCount=1, UserName=testtraveller98@tripgain.com, adultCount=2, ChildAge=1, index=1, childCount=0, City=Bengaluru, Karnataka, India, SearchByHotelClearAndSearch=BTM, URL=https://v3.tripgain.com/login, TestRun=, Currency=AMD, selectHotelInDetailsPageBasedOnIndex=1, selectHotelBasedOnIndex=1, Password=@AM@TGA1$29TN}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tripgain.hotaltestscripts.TCH_06_VerifySearchByHotelAddressFunctionality@11fc564b]" started-at="2025-07-25T10:47:44 IST" name="tearDown" finished-at="2025-07-25T10:47:44 IST" duration-ms="285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication(java.lang.String,java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:com.tripgain.hotaltestscripts.TCH_06_VerifySearchByHotelAddressFunctionality@11fc564b]" started-at="2025-07-25T10:47:44 IST" name="launchApplication" finished-at="2025-07-25T10:47:46 IST" duration-ms="1438" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.tripgain.hotaltestscripts.TCH_06_VerifySearchByHotelAddressFunctionality.myTest(java.util.Map) throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@618425b5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="myTest(java.util.Map)[pri:0, instance:com.tripgain.hotaltestscripts.TCH_06_VerifySearchByHotelAddressFunctionality@11fc564b]" started-at="2025-07-25T10:47:46 IST" name="myTest" data-provider="sheetBasedData" finished-at="2025-07-25T10:49:29 IST" duration-ms="102899" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{roomCount=2, UserName=testtraveller98@tripgain.com, adultCount=2, ChildAge=2, index=1, childCount=1, City=hydrerabad, Telangana, india, SearchByHotelClearAndSearch=Kondapur Hyderabad, URL=https://v3.tripgain.com/login, TestRun=, Currency=ALL, selectHotelInDetailsPageBasedOnIndex=1, selectHotelBasedOnIndex=1, Password=@AM@TGA1$29TN}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tripgain.hotaltestscripts.TCH_06_VerifySearchByHotelAddressFunctionality@11fc564b]" started-at="2025-07-25T10:49:29 IST" name="tearDown" finished-at="2025-07-25T10:49:29 IST" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication(java.lang.String,java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:com.tripgain.hotaltestscripts.TCH_06_VerifySearchByHotelAddressFunctionality@11fc564b]" started-at="2025-07-25T10:49:29 IST" name="launchApplication" finished-at="2025-07-25T10:49:30 IST" duration-ms="1291" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.tripgain.hotaltestscripts.TCH_06_VerifySearchByHotelAddressFunctionality.myTest(java.util.Map) throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@58695725]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="myTest(java.util.Map)[pri:0, instance:com.tripgain.hotaltestscripts.TCH_06_VerifySearchByHotelAddressFunctionality@11fc564b]" started-at="2025-07-25T10:49:30 IST" name="myTest" data-provider="sheetBasedData" finished-at="2025-07-25T10:51:38 IST" duration-ms="128170" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{roomCount=2, UserName=testtraveller98@tripgain.com, adultCount=1, ChildAge=2, index=1, childCount=1, City=hong kong, SearchByHotelClearAndSearch=Shenzhen, URL=https://v3.tripgain.com/login, TestRun=SLIP, Currency=KWD, selectHotelInDetailsPageBasedOnIndex=1, selectHotelBasedOnIndex=1, Password=@AM@TGA1$29TN}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tripgain.hotaltestscripts.TCH_06_VerifySearchByHotelAddressFunctionality@11fc564b]" started-at="2025-07-25T10:51:38 IST" name="tearDown" finished-at="2025-07-25T10:51:38 IST" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tripgain.hotaltestscripts.TCH_06_VerifySearchByHotelAddressFunctionality -->
+      <class name="com.tripgain.hotaltestscripts.TCH_03_VerifySearchFunctionalityForHotalForTenDays">
+        <test-method is-config="true" signature="launchApplication(java.lang.String,java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:com.tripgain.hotaltestscripts.TCH_03_VerifySearchFunctionalityForHotalForTenDays@17a7f733]" started-at="2025-07-25T10:36:36 IST" name="launchApplication" finished-at="2025-07-25T10:36:37 IST" duration-ms="1338" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.tripgain.hotaltestscripts.TCH_03_VerifySearchFunctionalityForHotalForTenDays.myTest(java.util.Map) throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@614ca7df]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="myTest(java.util.Map)[pri:0, instance:com.tripgain.hotaltestscripts.TCH_03_VerifySearchFunctionalityForHotalForTenDays@17a7f733]" started-at="2025-07-25T10:36:37 IST" name="myTest" data-provider="sheetBasedData" finished-at="2025-07-25T10:37:37 IST" duration-ms="59482" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{roomCount=2, UserName=testtraveller98@tripgain.com, adultCount=3, TestRun=, ChildAge=1, index=1, childCount=1, City=Bangalore, URL=https://v3.tripgain.com/login, Password=@AM@TGA1$29TN}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tripgain.hotaltestscripts.TCH_03_VerifySearchFunctionalityForHotalForTenDays@17a7f733]" started-at="2025-07-25T10:37:37 IST" name="tearDown" finished-at="2025-07-25T10:37:37 IST" duration-ms="651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tripgain.hotaltestscripts.TCH_03_VerifySearchFunctionalityForHotalForTenDays -->
+      <class name="com.tripgain.hotaltestscripts.TCH_08_VerifySearchByHotel">
+        <test-method is-config="true" signature="launchApplication(java.lang.String,java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:com.tripgain.hotaltestscripts.TCH_08_VerifySearchByHotel@6236eb5f]" started-at="2025-07-25T10:53:45 IST" name="launchApplication" finished-at="2025-07-25T10:53:46 IST" duration-ms="1251" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.tripgain.hotaltestscripts.TCH_08_VerifySearchByHotel.myTest(java.util.Map) throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@4fb3ee4e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="myTest(java.util.Map)[pri:0, instance:com.tripgain.hotaltestscripts.TCH_08_VerifySearchByHotel@6236eb5f]" started-at="2025-07-25T10:53:46 IST" name="myTest" data-provider="sheetBasedData" finished-at="2025-07-25T10:55:04 IST" duration-ms="77360" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{roomCount=1, Policy=In Policy, UserName=testtraveller98@tripgain.com, adultCount=2, TestRun=, ChildAge=1, index=1, childCount=0, City=Bengaluru, Karnataka, India, StarRating=5, URL=https://v3.tripgain.com/login, Password=@AM@TGA1$29TN}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tripgain.hotaltestscripts.TCH_08_VerifySearchByHotel@6236eb5f]" started-at="2025-07-25T10:55:04 IST" name="tearDown" finished-at="2025-07-25T10:55:04 IST" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication(java.lang.String,java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:com.tripgain.hotaltestscripts.TCH_08_VerifySearchByHotel@6236eb5f]" started-at="2025-07-25T10:55:04 IST" name="launchApplication" finished-at="2025-07-25T10:55:05 IST" duration-ms="1256" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.tripgain.hotaltestscripts.TCH_08_VerifySearchByHotel.myTest(java.util.Map) throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5d7148e2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="myTest(java.util.Map)[pri:0, instance:com.tripgain.hotaltestscripts.TCH_08_VerifySearchByHotel@6236eb5f]" started-at="2025-07-25T10:55:05 IST" name="myTest" data-provider="sheetBasedData" finished-at="2025-07-25T10:56:30 IST" duration-ms="84629" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{roomCount=2, Policy=In Policy, UserName=testtraveller98@tripgain.com, adultCount=2, TestRun=, ChildAge=2, index=1, childCount=1, City=hydrerabad, Telangana, india, StarRating=4, URL=https://v3.tripgain.com/login, Password=@AM@TGA1$29TN}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tripgain.hotaltestscripts.TCH_08_VerifySearchByHotel@6236eb5f]" started-at="2025-07-25T10:56:30 IST" name="tearDown" finished-at="2025-07-25T10:56:30 IST" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tripgain.hotaltestscripts.TCH_08_VerifySearchByHotel -->
+    </test> <!-- test -->
+  </suite> <!-- Suite -->
+</testng-results>
