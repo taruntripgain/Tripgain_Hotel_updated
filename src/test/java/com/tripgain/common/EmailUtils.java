@@ -1,5 +1,6 @@
 package com.tripgain.common;
 
+
 import java.io.File;
 import java.util.Properties;
 
@@ -56,3 +57,4 @@ public class EmailUtils {
 
 
 }
+

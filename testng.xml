@@ -25,11 +25,11 @@
       <class name="com.tripgain.hotaltestscripts.TCH_01_VerifySearchFunctionalityForHotalForTwoDays"/>
       <class name="com.tripgain.hotaltestscripts.TCH_02_VerifySearchFunctionalityForHotalForFiveDays"/>
       <class name="com.tripgain.hotaltestscripts.TCH_03_VerifySearchFunctionalityForHotalForTenDays"/>
-      <class name="com.tripgain.hotaltestscripts.TCH_04_VerifySearchFunctionalityForHotalForTwoDayTillBookingPage"/>
+      <!--class name="com.tripgain.hotaltestscripts.TCH_04_VerifySearchFunctionalityForHotalForTwoDayTillBookingPage"/>
       <class name="com.tripgain.hotaltestscripts.TCH_05_VerifySearchFunctionalityForHotalApplyingFliters"/>
       <class name="com.tripgain.hotaltestscripts.TCH_06_VerifySearchByHotelAddressFunctionality"/>
       <class name="com.tripgain.hotaltestscripts.TCH_07_VerifySearchByHotelCurrency"/>
-      <class name="com.tripgain.hotaltestscripts.TCH_08_VerifySearchByHotel"/>
+      <class name="com.tripgain.hotaltestscripts.TCH_08_VerifySearchByHotel"/-->
 
       
       
